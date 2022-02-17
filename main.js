@@ -84,7 +84,7 @@ if (anu.action == 'add' && !mem.includes(herman.user.jid)) {
                 time_wel = moment.tz('Asia/Jakarta').format("hh:mm")
                 teks = `*Hii @${num.split('@')[0]}*\n\n*• Nomor :* *${num.split('@')[0]}*\n*• Bio :* *${thu.status}*\n*• Members :* *${memeg}*`
                 tekss = `*${time_welc}*`
-                welcomeBut = [{buttonId:`#y`,buttonText:{displayText:'Wellcome!'},type:1}]
+                welcomeBut = [{buttonId:`#y`,buttonText:{displayText:'Selamat Datang!'},type:1}]
                 welcomeButt = { contentText: `${teks}`, footerText: `${tekss}`, buttons: welcomeBut, headerType: 6, locationMessage: bosco2.message.locationMessage}
                 herman.sendMessage(mdata.id, welcomeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
                  }
@@ -98,7 +98,7 @@ if (anu.action == 'add' && !mem.includes(herman.user.jid)) {
                 time_welc = moment.tz('Asia/Kolkata').format('DD/MM/YYYY')
                 time_wel = moment.tz('Asia/Kolkata').format("hh:mm")
                 memeg = mdata.participants.length
-                out = `*Selamat Tinggal! @${num.split('@')[0]}*`
+                out = `*@${num.split('@')[0]} Keluar Groups!*`
                 goodbyeBut = [{buttonId:` `,buttonText:{displayText:'Byeee!'}, type:1}]
                 goodbyeButt = { contentText: `${out}`, footerText: `- *${time_welc}*`, buttons: goodbyeBut, headerType: 6, locationMessage: bosco3.message.locationMessage}
                 herman.sendMessage(mdata.id, goodbyeButt, MessageType.buttonsMessage, { caption: 'hehe', "contextInfo": { "mentionedJid" : [num], },})
